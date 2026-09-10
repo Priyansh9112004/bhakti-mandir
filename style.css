@@ -1740,42 +1740,12 @@ input[type="range"] {
     }
 
 
-    .site-credit {
-    width: calc(100% - 40px);
-    max-width: 1330px;
-    margin: 35px auto 105px;
-    padding: 13px 20px;
+    .keyboard-help {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+        display:
+            none;
 
-    border: 1px solid rgba(214, 139, 52, 0.28);
-    border-radius: 14px;
-
-    background: rgba(255, 248, 238, 0.75);
-
-    font-size: 14px;
-    font-weight: 600;
-    color: #6f3b16;
-
-    text-align: center;
-}
-
-.site-credit span:last-child {
-    font-weight: 700;
-    color: #e76f00;
-}
-
-@media (max-width: 600px) {
-    .site-credit {
-        width: calc(100% - 24px);
-        margin-bottom: 100px;
-        font-size: 12px;
-        padding: 11px 12px;
     }
-}
 
 
     .bottom-player {
@@ -1808,6 +1778,76 @@ input[type="range"] {
         width:
             100%;
 
+    }
+
+}
+/* ================================
+   WEBSITE CREDIT
+================================ */
+
+.site-credit {
+    width: calc(100% - 80px);
+    max-width: 1400px;
+    min-height: 52px;
+
+    margin: 28px auto 105px;
+    padding: 12px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #fff7ec,
+        #fff0dc
+    );
+
+    border: 1px solid #f2d4b4;
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(107, 55, 17, 0.06);
+
+    color: #653814;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+.site-credit .credit-dot {
+    opacity: 0.55;
+}
+
+.site-credit .credit-name {
+    color: #e86600;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+
+    .site-credit {
+        width: calc(100% - 28px);
+        margin: 22px auto 100px;
+        padding: 11px 14px;
+
+        font-size: 13px;
+        border-radius: 13px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .site-credit {
+        gap: 6px;
+        font-size: 12px;
     }
 
 }
